@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PT. Cipta Hospital Indonesia - Layanan Kesehatan Terpadu dengan Teknologi Modern">
+    <title>PT. Cipta Hospital Indonesia | Rumah Sakit Modern 2025</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/Logo-Cipta-Hospital.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/Logo-Cipta-Hospital.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-toggle">
+        <button id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="images/Logo-Cipta-Hospital.png" alt="PT. Cipta Hospital Indonesia Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#doctors">Dokter & Tim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#facilities">Fasilitas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">PT. Cipta Hospital Indonesia</h1>
+            <p class="hero-subtitle">Layanan Kesehatan Terpadu dengan Teknologi 2025</p>
+            <div class="hero-text-animation">
+                <span class="typed-text"></span>
+                <span class="cursor">&nbsp;</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Hubungi Kami</a>
+                <a href="#services" class="btn btn-outline">Layanan Kami</a>
+            </div>
+        </div>
+        <div class="hero-scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 about-image">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Tentang PT. Cipta Hospital Indonesia" class="img-fluid rounded">
+                    <div class="stats-overlay">
+                        <div class="stat-item">
+                            <h3>25+</h3>
+                            <p>Spesialis</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>500+</h3>
+                            <p>Pasien/Hari</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>98%</h3>
+                            <p>Kepuasan Pasien</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 about-content">
+                    <h2 class="section-title">Tentang Kami</h2>
+                    <p class="section-subtitle">Mengutamakan Kesehatan Anda Sejak 2020</p>
+                    <p>PT. Cipta Hospital Indonesia adalah rumah sakit modern yang didirikan dengan visi memberikan layanan kesehatan terpadu dengan teknologi terkini. Kami menggabungkan keahlian medis dengan inovasi digital untuk pengalaman pasien yang lebih baik.</p>
+                    <ul class="about-features">
+                        <li><i class="fas fa-check-circle"></i> Akreditasi Internasional JCI</li>
+                        <li><i class="fas fa-check-circle"></i> Teknologi Robotik untuk Operasi Presisi</li>
+                        <li><i class="fas fa-check-circle"></i> Sistem Rekam Medis Elektronik Terintegrasi</li>
+                        <li><i class="fas fa-check-circle"></i> Tim Dokter Spesialis Berpengalaman</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Layanan Kami</h2>
+                <p class="section-subtitle">Pelayanan Kesehatan Komprehensif dengan Standar Tertinggi</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Kardiologi</h3>
+                        <p>Layanan jantung terpadu dengan kateterisasi dan bedah jantung minimal invasif.</p>
+                        <a href="#service-details" class="service-link" data-service="cardiology">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Neurologi</h3>
+                        <p>Diagnosis dan penanganan gangguan saraf dengan teknologi imaging mutakhir.</p>
+                        <a href="#service-details" class="service-link" data-service="neurology">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3>Obstetri & Ginekologi</h3>
+                        <p>Perawatan ibu dan anak dengan fasilitas NICU dan kamar bersalin modern.</p>
+                        <a href="#service-details" class="service-link" data-service="obgyn">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                        <h3>Orthopedi</h3>
+                        <p>Bedah tulang dan sendi dengan teknik arthroscopy dan robot-assisted surgery.</p>
+                        <a href="#service-details" class="service-link" data-service="orthopedics">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Oftalmologi</h3>
+                        <p>Laser vision correction dan operasi katarak dengan teknologi femtosecond.</p>
+                        <a href="#service-details" class="service-link" data-service="ophthalmology">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Bedah Robotik</h3>
+                        <p>Operasi presisi tinggi dengan sistem da Vinci Xi untuk hasil optimal.</p>
+                        <a href="#service-details" class="service-link" data-service="robotic-surgery">Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline">Lihat Semua Layanan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Modal -->
+    <div id="service-details" class="service-details-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="service-title">Detail Layanan</h2>
+            <div id="service-content">
+                <!-- Content will be filled by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="section doctors-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dokter & Tim Spesialis</h2>
+                <p class="section-subtitle">Bertemu dengan Tim Medis Profesional Kami</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Dr. Andi Wijaya">
+                            <div class="doctor-social">
+                                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:doctor@ciptahospital.id"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Andi Wijaya, Sp.JP</h3>
+                            <p>Kardiologi Intervensi</p>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Dr. Siti Rahayu">
+                            <div class="doctor-social">
+                                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:doctor@ciptahospital.id"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Siti Rahayu, Sp.OG</h3>
+                            <p>Obstetri & Ginekologi</p>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Dr. Budi Santoso">
+                            <div class="doctor-social">
+                                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:doctor@ciptahospital.id"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Budi Santoso, Sp.BS</h3>
+                            <p>Bedah Saraf</p>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Dr. Rina Dewi">
+                            <div class="doctor-social">
+                                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:doctor@ciptahospital.id"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Rina Dewi, Sp.PD</h3>
+                            <p>Penyakit Dalam</p>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary">Lihat Semua Dokter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="section facilities-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Fasilitas Modern Kami</h2>
+                <p class="section-subtitle">Teknologi Kesehatan Terkini untuk Perawatan Optimal</p>
+            </div>
+            <div class="facilities-slider">
+                <div class="facility-item">
+                    <img src="https://images.unsplash.com/photo-1578496781985-452d4a934d50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="MRI 3 Tesla">
+                    <div class="facility-info">
+                        <h3>MRI 3 Tesla</h3>
+                        <p>Pencitraan resolusi tinggi untuk diagnosis akurat dengan waktu pemindaian lebih cepat.</p>
+                    </div>
+                </div>
+                <div class="facility-item">
+                    <img src="https://rmf.imgix.net/img/content-images/439/full-width/Self_Regional_Hybrid_OR_23_10_9973_Edit_1_72dpi.jpg?w=2400&q=60&auto=format,compress" alt="Hybrid Operating Room">
+                    <div class="facility-info">
+                        <h3>Hybrid Operating Room</h3>
+                        <p>Ruang operasi dengan teknologi imaging terintegrasi untuk prosedur kompleks.</p>
+                    </div>
+                </div>
+                <div class="facility-item">
+                    <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a7d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Robot Surgery System">
+                    <div class="facility-info">
+                        <h3>Robot Surgery System</h3>
+                        <p>Sistem bedah robotik da Vinci Xi untuk operasi presisi dengan luka minimal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Apa Kata Pasien Kami</h2>
+                <p class="section-subtitle">Pengalaman nyata dari pasien PT. Cipta Hospital Indonesia</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="testimonial-slider">
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>"Operasi jantung saya berjalan sangat lancar di CHI. Tim dokter sangat profesional dan perawatannya sangat memuaskan. Fasilitasnya juga sangat lengkap dan modern."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Patient">
+                                <div>
+                                    <h4>Bapak Agus</h4>
+                                    <p>Pasien Kardiologi</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p>"Melahirkan anak pertama saya di CHI adalah pengalaman yang sangat menyenangkan. Dokter dan bidan sangat perhatian, kamar bersalin nyaman dengan teknologi terkini."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Patient">
+                                <div>
+                                    <h4>Ibu Dian</h4>
+                                    <p>Pasien Obstetri</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p>"Setelah operasi tulang belakang dengan robot, pemulihan saya jauh lebih cepat dari perkiraan. Fisioterapis di CHI juga sangat membantu proses recovery saya."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Patient">
+                                <div>
+                                    <h4>Bapak Joko</h4>
+                                    <p>Pasien Orthopedi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 appointment-content">
+                    <h2>Butuh Janji Temu dengan Dokter?</h2>
+                    <p>Kami menyediakan layanan reservasi online yang mudah dan cepat. Pilih dokter, tanggal, dan waktu yang sesuai dengan kebutuhan Anda.</p>
+                    <ul class="appointment-features">
+                        <li><i class="fas fa-check"></i> Reservasi 24/7 melalui sistem online</li>
+                        <li><i class="fas fa-check"></i> Konfirmasi instan via email/SMS</li>
+                        <li><i class="fas fa-check"></i> Pengingat janji temu otomatis</li>
+                        <li><i class="fas fa-check"></i> Pembayaran online tersedia</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 appointment-form">
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Nomor Telepon" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-select" required>
+                                <option value="" disabled selected>Pilih Dokter Spesialis</option>
+                                <option>Kardiologi</option>
+                                <option>Neurologi</option>
+                                <option>Obstetri & Ginekologi</option>
+                                <option>Orthopedi</option>
+                                <option>Penyakit Dalam</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Buat Janji Temu</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hubungi Kami</h2>
+                <p class="section-subtitle">Kami siap melayani kebutuhan kesehatan Anda</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Alamat</h3>
+                            <p>Jl. Kesehatan No. 123, Jakarta Selatan<br>DKI Jakarta, Indonesia 12520</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telepon</h3>
+                            <p>+62 85123607725 (Hunting)<br>+62 85890084378 (24 Jam)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>ilhambustomi54@gmail.com<br>ilhambustomi54@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Jam Operasional</h3>
+                            <p>Senin-Jumat: 07.00 - 21.00 WIB<br>Sabtu-Minggu: 08.00 - 17.00 WIB<br>IGD: 24 Jam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 contact-form">
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control" placeholder="Nama Lengkap" required>
+                                    <div class="invalid-feedback">Harap isi nama lengkap Anda</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-control" placeholder="Alamat Email" required>
+                                    <div class="invalid-feedback">Harap isi email yang valid</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" class="form-control" placeholder="Subjek" required>
+                            <div class="invalid-feedback">Harap isi subjek pesan</div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" rows="5" placeholder="Pesan Anda" required></textarea>
+                            <div class="invalid-feedback">Harap isi pesan Anda</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container-fluid p-0">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.81956135000001!3d-6.1945959999999945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTEnNDAuNiJTIDEwNsKwNDknMTAuNCJF!5e0!3m2!1sen!2sid!4v1620000000000!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 footer-about">
+                    <img src="/images/Logo-.png" alt="PT. Cipta Hospital Indonesia" class="footer-logo">
+                    <p>PT. Cipta Hospital Indonesia adalah rumah sakit modern dengan layanan kesehatan terpadu dan teknologi terkini untuk memberikan perawatan terbaik bagi pasien.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/ilham.bustomi.581/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/_ilham_bustomi_/?hl=id" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@shiraori7058" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://github.com/Tomi-012" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 footer-links">
+                    <h3>Link Cepat</h3>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#doctors">Dokter</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 footer-links">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="#service-details" data-service="cardiology">Kardiologi</a></li>
+                        <li><a href="#service-details" data-service="neurology">Neurologi</a></li>
+                        <li><a href="#service-details" data-service="obgyn">Obstetri & Ginekologi</a></li>
+                        <li><a href="#service-details" data-service="orthopedics">Orthopedi</a></li>
+                        <li><a href="#service-details" data-service="robotic-surgery">Bedah Robotik</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Berlangganan newsletter kami untuk mendapatkan informasi terbaru tentang kesehatan dan layanan kami.</p>
+                    <form id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Alamat Email" required>
+                            <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6 copyright">
+                        <p>&copy; 2025 PT. Cipta Hospital Indonesia. Semua Hak Dilindungi.</p>
+                    </div>
+                    <div class="col-md-6 footer-menu">
+                        <ul>
+                            <li><a href="#">Kebijakan Privasi</a></li>
+                            <li><a href="#">Syarat & Ketentuan</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
