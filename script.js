@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Scroll animation for sections
     function animateOnScroll() {
-        const elements = document.querySelectorAll('.about-image, .about-content, .service-card, .doctor-card, .facility-item, .testimonial-slider');
+        const elements = document.querySelectorAll('.about-image, .about-content, .service-card, .doctor-card, .facility-item, .testimonial-item');
         
         elements.forEach(element => {
             const elementPosition = element.getBoundingClientRect().top;
@@ -275,42 +275,144 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    // Simple facilities slider
-    let currentFacility = 0;
-    const facilities = document.querySelectorAll('.facility-item');
-    
+
+    // Enhanced Facilities Slider
+    const facilitySlider = document.querySelector('.facilities-slider');
+    const facilityItems = document.querySelectorAll('.facility-item');
+    const sliderDots = document.querySelectorAll('.slider-dot');
+    let currentFacilityIndex = 0;
+    let autoSlideInterval;
+
     function showFacility(index) {
-        facilities.forEach((facility, i) => {
-            facility.style.transform = `translateX(${100 * (i - index)}%)`;
+        // Update slider position
+        facilitySlider.scrollTo({
+            left: facilityItems[index].offsetLeft,
+            behavior: 'smooth'
         });
+        
+        // Update dot indicators
+        sliderDots.forEach(dot => dot.classList.remove('active'));
+        sliderDots[index].classList.add('active');
+        
+        currentFacilityIndex = index;
     }
-    
-    // Auto-rotate facilities
-    setInterval(() => {
-        currentFacility = (currentFacility + 1) % facilities.length;
-        showFacility(currentFacility);
-    }, 5000);
-    
-    // Initialize by showing first facility
-    showFacility(0);
-    
-    // Simple testimonial slider
-    let currentTestimonial = 0;
-    const testimonials = document.querySelectorAll('.testimonial-item');
-    
+
+    // Dot click event
+    sliderDots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            clearInterval(autoSlideInterval);
+            showFacility(parseInt(dot.dataset.index));
+            startAutoSlide();
+        });
+    });
+
+    // Auto slide function
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+            currentFacilityIndex = (currentFacilityIndex + 1) % facilityItems.length;
+            showFacility(currentFacilityIndex);
+        }, 5000);
+    }
+
+    // Initialize slider
+    if (facilityItems.length > 0) {
+        // Set first item as active
+        sliderDots[0].classList.add('active');
+        
+        // Start auto slide
+        startAutoSlide();
+        
+        // Pause on hover
+        facilitySlider.addEventListener('mouseenter', () => {
+            clearInterval(autoSlideInterval);
+        });
+        
+        facilitySlider.addEventListener('mouseleave', startAutoSlide);
+    }
+
+    // Enhanced Testimonial Slider
+    const testimonialItems = document.querySelectorAll('.testimonial-item');
+    const testimonialDots = document.querySelectorAll('.testimonial-dots .dot');
+    const testimonialPrev = document.querySelector('.testimonial-prev');
+    const testimonialNext = document.querySelector('.testimonial-next');
+    let currentTestimonialIndex = 0;
+    let testimonialInterval;
+
     function showTestimonial(index) {
-        testimonials.forEach((testimonial, i) => {
-            testimonial.style.display = i === index ? 'block' : 'none';
+        // Hide all testimonials
+        testimonialItems.forEach(item => {
+            item.classList.remove('active');
+        });
+        
+        // Show selected testimonial
+        testimonialItems[index].classList.add('active');
+        
+        // Update dot indicators
+        testimonialDots.forEach(dot => dot.classList.remove('active'));
+        testimonialDots[index].classList.add('active');
+        
+        currentTestimonialIndex = index;
+    }
+
+    // Next testimonial
+    function nextTestimonial() {
+        currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonialItems.length;
+        showTestimonial(currentTestimonialIndex);
+    }
+
+    // Previous testimonial
+    function prevTestimonial() {
+        currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonialItems.length) % testimonialItems.length;
+        showTestimonial(currentTestimonialIndex);
+    }
+
+    // Dot click event for testimonials
+    testimonialDots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            clearInterval(testimonialInterval);
+            showTestimonial(parseInt(dot.dataset.index));
+            startTestimonialAutoSlide();
+        });
+    });
+
+    // Navigation button events
+    if (testimonialPrev && testimonialNext) {
+        testimonialPrev.addEventListener('click', () => {
+            clearInterval(testimonialInterval);
+            prevTestimonial();
+            startTestimonialAutoSlide();
+        });
+
+        testimonialNext.addEventListener('click', () => {
+            clearInterval(testimonialInterval);
+            nextTestimonial();
+            startTestimonialAutoSlide();
         });
     }
-    
-    // Auto-rotate testimonials
-    setInterval(() => {
-        currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-        showTestimonial(currentTestimonial);
-    }, 7000);
-    
-    // Initialize by showing first testimonial
-    showTestimonial(0);
+
+    // Auto slide function for testimonials
+    function startTestimonialAutoSlide() {
+        testimonialInterval = setInterval(() => {
+            nextTestimonial();
+        }, 5000);
+    }
+
+    // Initialize testimonial slider
+    if (testimonialItems.length > 0) {
+        // Set first item as active
+        showTestimonial(0);
+        
+        // Start auto slide
+        startTestimonialAutoSlide();
+        
+        // Pause on hover
+        const testimonialContainer = document.querySelector('.testimonial-slider');
+        if (testimonialContainer) {
+            testimonialContainer.addEventListener('mouseenter', () => {
+                clearInterval(testimonialInterval);
+            });
+            
+            testimonialContainer.addEventListener('mouseleave', startTestimonialAutoSlide);
+        }
+    }
 });
